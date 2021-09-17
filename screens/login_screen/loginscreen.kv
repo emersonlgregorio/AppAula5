@@ -1,0 +1,76 @@
+<LoginScreen>
+
+    MDFloatLayout:
+        MDToolbar:
+            md_bg_color: 1,1,1,1
+#            title: 'App Vendas'
+            pos_hint: {'top': 0.99}
+#            elevation: 15
+            specific_text_color: app.theme_cls.primary_color
+            left_action_items: [['arrow-left']]
+
+        Image:
+            source: 'images/foto7.png'
+            size_hint: (0.3, 0.3)
+            pos_hint: {'center_x': .5, 'center_y': .82}
+
+        MDLabel:
+            text: "Seja bem vindo!"
+            halign: 'center'
+            font_style: 'H5'
+            pos_hint: {'center_y': 0.70}
+            bold: True
+        MDLabel:
+            text: "Faça o login para continuar."
+            halign: 'center'
+            font_style: 'Caption'
+            pos_hint: {'center_y': 0.65}
+        MDTextField:
+            hint_text: 'E-mail'
+            pos_hint: {'center_x': .5, 'center_y': .55}
+            size_hint_x: .8
+            icon_right: 'email'
+            icon_right_color: app.theme_cls.primary_color
+        MDTextField:
+            hint_text: 'Senha'
+            pos_hint: {'center_x': .5, 'center_y': .48}
+            size_hint_x: .8
+            password: True
+            icon_right: 'lock'
+            icon_right_color: app.theme_cls.primary_color
+        MDFillRoundFlatButton:
+            text: "Entrar"
+            text_color: 1,1,0.99,1
+            elevation: 15
+            font_size: 22
+            pos_hint: {'center_x': .5, 'center_y': .38}
+            size_hint_x: .8
+
+        MDFillRoundFlatIconButton:
+            icon: 'facebook'
+            text: "Entrar com Facebook"
+            md_bg_color: 0.18, 0.53, 1, 1
+            text_color: 1,1,0.99,1
+            elevation: 15
+            font_size: 22
+            pos_hint: {'center_x': .5, 'center_y': .30}
+            size_hint_x: .8
+
+        MDFillRoundFlatIconButton:
+            icon: 'google'
+            text: "Entrar com Google"
+            md_bg_color: 0.89, 0.25, 0.20, 1
+            text_color: 1,1,0.99,1
+            elevation: 15
+            font_size: 22
+            pos_hint: {'center_x': .5, 'center_y': .22}
+            size_hint_x: .8
+
+        MDTextButton:
+            text: "Esqueci minha Senha"
+            md_bg_color: 0.89, 0.25, 0.20, 1
+            text_color: 1,1,0.99,1
+            font_size: 22
+            halign: 'center'
+            pos_hint: {'center_x': 0.5, 'center_y': .15}
+            size_hint_x: .8
